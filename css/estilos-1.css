@@ -1,0 +1,171 @@
+
+/*! INDEX.HTML */
+
+body {
+    background-color: #E11364;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #BC105C;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-width: 0px 5px;
+    padding: 10px;
+    margin: 5%;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 20px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+
+h3 {
+    color: #BC105C;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;    
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 30px;
+    margin-bottom: 2px;
+}
+
+.hr{
+    border-top: 5px dotted #BC105C;
+    border-bottom: 5px;
+    width: 98%;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 25px;
+    padding-right: 20px;
+}
+
+.contenedor-exterior {
+    background-color: #BC105C;
+    text-align: center;
+    padding-top: 5px;
+    padding: 15px;
+    margin: 5%;
+    border-radius: 10px;
+} 
+
+.contenedor-interior {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+img {
+    width: 98%;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2C8F20;
+    border-radius: 5px;
+    border: #2C8F20;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+a:hover {
+    background-color: #E11364;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #E96093;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ 
+/*! COMPRA.HTML */
+
+.div-compra1 {
+    background-color: #BC105C;
+    padding-top: 5px;
+    padding: 15px;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.div-compra2 {
+    background-color: #BC105C;
+    padding-top: 5px;
+    padding: 15px;
+    margin: 5%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+.domicilio {
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 20px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.label {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left ;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: left;
+}
+
+.contenedor-de-imagen {
+    background-color: #BC105C;
+    text-align: center;
+    padding-top: 5px;
+    padding: 15px;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.img-compra {
+    width: 98%;
+    align-items: right;
+    margin-bottom: 30px;
+}
+
+.volver {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2C8F20;
+    border-radius: 5px;
+    border: #2C8F20;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
