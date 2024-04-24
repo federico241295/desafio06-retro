@@ -1,50 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/estilos-1.css"> -->
-    <!-- Link con fuente de la hoja de estilos n°2 -->
-    <link rel="stylesheet" href="css/estilos-2.css">
-    <title>Federico Godoy - Juegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Federico Godoy - Formulario Retro</title>
   </head>
   <body>
-    <h1>Juegos</h1>
-
-    
-      <main class="contenedor-exterior">
-        <h2>Los más vendidos</h2>
-          <article class="contenedor-interior">
-          <h3>Mario Kart™ 8 Deluxe</h3>
-          <hr class="hr">
-          <img src="/public/imgs/mario-kart-8-deluxe.webp" alt="Mario   andando en karting">
-          <p>¡Calienta motores en la versión definitiva de Mario Kart™ 8 y  juega donde y cuando quieras!</p>
-          <p>Compite con tus amigos en carreras o en el modo batalla, que   incluye circuitos nuevos y otros ya conocidos.
-          Juega en el modo local y en 1080p en partidas de hasta 4 jugadores en el modo televisor.
-          Todos los circuitos de la versión de Wii U, incluyendo  elcontenido descargable, están disponibles.</p>
-          <p>Además, ¡los inklings aparecen como personajes invitados junto   con otro personajes de juegos anteriores,
-          como el Rey Bú, Huesitos y Bowser Jr!</p>
-          <a href="compra-de-mario.html" target="_self"><strong>Comprar!</strong></a>
-        </article>
-        <article class="contenedor-interior">
-          <h3>Mortal Kombat 11</h3>
-          <hr class="hr">
-          <img src="/public/imgs/mortal-kombat-11.webp" alt="Subzero a punto de pelear">
-          <p>Mortal Kombat 11, la más reciente entrega de la aclamada franquicia, te ofrece una experiencia más profunda y personalizada que nunca.</p>
-          <p>Con las nuevas variantes de personaje tendrás un control sin precedentes para personalizar a tus luchadores y hacerlos únicos. Con un reparto de luchadores nuevos y klásicos, el modo Historia cinemático continúa la épica saga iniciada hace más de 25 años. Juega con una variedad de personajes, pasados, presentes y futuros, en una nueva narrativa donde el tiempo se distorsiona y Raiden debe enfrentarse a Kronika, la Guardiana del Tiempo.</p>
-          <p>Este nuevo título ofrece múltiples modos de juego, incluyendo las Torres del Tiempo, los que permiten a los jugadores poner a prueba sus habilidades a través de varios
-          desafíos y disfrutar de Mortal Kombat 11 de muchas otras maneras.</p>
-          <a href="compra-de-mk.html" target="_self"><strong>Comprar!</strong></a>
-        </article>
-      </main>
-    
-      <footer>
-        <h2 class="footer">Desarrollado por misitio.com</h2>
-      </footer>
-
-
-
-
+    <h1>Vení al Gym! 💪🏼</h1>
+    <form class="datos-personales">
+      <fieldset>
+        <div class="div-datos">🙋🏼‍♂️ Datos Personales 👀</div>
+        <p>
+          <label for="iname">Nombre:*</label>
+        </p>
+        <input
+          class="name"
+          id="iname"
+          type="text"
+          name="name"
+          size="60"
+          required
+        />
+        <p>
+          <label for="isurname">Apellido:*</label>
+        </p>
+        <input
+          class="surname"
+          id="isurname"
+          type="text"
+          name="surname"
+          required
+        />
+        <p>
+          <label for="idocument">Documento:*</label>
+        </p>
+        <input
+          class="document"
+          id="idocument"
+          type="text"
+          name="document"
+          required
+        />
+        <p>
+          <label for="inacionalidad">Nacionalidad:*</label>
+        </p>
+        <select class="option" name="Nacionalidad" id="inacionalidad">
+          <option class="seleccionar" value="select" disabled selected>
+            - Seleccionar -
+          </option>
+          <option value="argentina">Argentina</option>
+          <option value="brasileña">Brasileña</option>
+          <option value="paraguaya">Paraguaya</option>
+          <option value="uruguaya">Uruguaya</option>
+        </select>
+        <p>
+          <label for="info">Contanos un poco de vos...</label>
+        </p>
+        <textarea
+          class="textarea"
+          name="info"
+          id="info"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <p>Sexo:*</p>
+        <input type="radio" id="femenino" name="sexo" value="Femenino" />
+        <label class="genero" for="femenino">Femenino</label>
+        <input type="radio" id="masculino" name="sexo" value="Masculino" />
+        <label class="genero" for="masculino">Masculino</label>
+        <input type="radio" id="otro" name="sexo" value="Otro" />
+        <label class="genero" for="otro">Otro</label>
+      </fieldset>
+    </form>
+    <hr />
+    <form class="datos-de-contactos">
+      <fieldset>
+        <div class="div-datos-contacto">📱 Datos de contacto 📧</div>
+        <p>
+          <label for="itelefono">Teléfono:*</label>
+        </p>
+        <input
+          class="telefono"
+          id="itelefono"
+          name="telefono"
+          placeholder="Código de área y número"
+        />
+        <p>
+          <label for="iemail">Dirección de correo electrónico:</label>
+        </p>
+        <input
+          class="email"
+          id="iemail"
+          type="email"
+          name="email"
+          placeholder="Ej: mail@gmail.com"
+          required
+        />
+      </fieldset>
+    </form>
+    <hr />
+    <form class="actividades">
+      <fieldset>
+        <div class="div-actividades">🚴🏼‍♂️ Actividades 🤸🏼‍♂️</div>
+        <p class="p-actividades">
+          Por favor, indicá cuáles actividades te interesan.
+        </p>
+        <p class="p-actividades">Sede Palermo:</p>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="basquet"
+          name="actividades"
+          value="basquet"
+        />
+        <label class="lbl-actividades" for="basquet">Básquet</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="boxeo"
+          name="actividades"
+          value="boxeo"
+        />
+        <label class="lbl-actividades" for="boxeo">Boxeo</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="futbol"
+          name="actividades"
+          value="futbol"
+        />
+        <label class="lbl-actividades" for="futbol">Fútbol</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="tenis"
+          name="actividades"
+          value="tenis"
+        />
+        <label class="lbl-actividades" for="tenis">Tenis</label>
+        <p class="p-actividades">Sede Rosario:</p>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="basquet2"
+          name="actividades"
+          value="basquet"
+        />
+        <label class="lbl-actividades" for="basquet">Básquet</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="futbol2"
+          name="actividades"
+          value="futbol"
+        />
+        <label class="lbl-actividades" for="futbol">Fútbol</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="rugby"
+          name="actividades"
+          value="rugby"
+        />
+        <label class="lbl-actividades" for="rugby">Rugby</label>
+        <input
+          class="input-actividades"
+          type="checkbox"
+          id="voley"
+          name="actividades"
+          value="voley"
+        />
+        <label class="lbl-actividades" for="voley">Voley</label>
+      </fieldset>
+    </form>
+    <p class="p-condiciones">
+      <input
+        type="checkbox"
+        id="condiciones"
+        name="condiciones"
+        value="condiciones"
+        required
+      />
+      <label for="condiciones">Acepto las condiciones*</label>
+    </p>
+    <p class="p-condiciones">
+      <input
+        type="checkbox"
+        id="novedades"
+        name="novedades"
+        value="novedades"
+      />
+      <label for="novedades">Deseo recibir novedades</label>
+    </p>
+    <p class="p-condiciones">*:campo obligatorio.</p>
+    <div class="div-button">
+      <button class="ini-afil">Iniciar afiliación</button>
+      <button>Restablecer</button>
+    </div>
 
     <script type="module" src="/main.js"></script>
   </body>
